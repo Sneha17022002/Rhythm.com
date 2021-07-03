@@ -1,0 +1,295 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0;
+}
+
+#logo img {
+    margin : 20px 25px;
+    height: 80px;
+    width: 80px;
+}
+#xyz{
+    display: flex;
+}
+
+
+#navbar::before{
+    position: absolute;
+    content: "";
+    background-color: rgb(232, 238, 181);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+
+#navbar ul li a{
+    padding: 10px;
+    text-decoration: none;
+    /* display: block; */
+    border-radius: 20px;
+    color:black;
+}
+#navbar .btn{
+    display: flex;
+    position: absolute;
+    margin-left: 90%;
+}
+
+#navbar ul li a:hover{
+    background-color: black;
+    color: white;
+}
+
+#main{
+    display: flex;
+    flex-direction: column ;
+    padding: 45px;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+}
+#main::before{
+    position: absolute;
+    content: "";
+    background: url("../img/bg.jpg") no-repeat center center/cover;
+    z-index: -1;
+    width: 100%;
+    height: 85%;
+    opacity: 0.8;
+}
+
+h2{
+    padding: 10px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: cursive;
+    font-weight:bolder;
+    color:rgb(65, 50, 50);
+    text-shadow: 4px 5px 1px #e7daa5 ;
+
+}
+
+
+#main p{
+    font-size: 1rem;
+    color: rgb(56, 47, 43);
+    font-family: 'Nunito', sans-serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border-radius: 10px;
+    background-color: cornsilk;
+    color:brown;
+    margin: 17px;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    background-color: brown;
+    border: burlywood;
+    color: cornsilk;
+}
+
+.services{
+    margin: 8px;
+     margin-top: 150px;
+    /* padding: 20px; */
+}
+
+h3{
+    font-size: 2.2rem;
+    text-align: center;
+   
+    font-family: 'Chelsea Market', cursive;
+}
+
+#services{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: auto;
+    
+}
+
+.services{
+    background-color: cornsilk;
+}
+
+.services h3{
+    padding: 5px;
+}
+
+.box{
+    border-radius: 5px;
+    border: 2px solid brown;
+    margin: 10px;
+    padding: 20PX;
+    background-color: rgb(245, 243, 241);
+    display: block;
+    align-content: center;
+    justify-items: center;
+    /* animation: BOX 2s ease-in 1ms 2 none ;
+    transition:ease-in; */
+}
+/* 
+@keyframes BOX {
+    from{
+        width: 50%;
+    }
+    to{
+        width: 100%;
+    }
+} */
+.box:hover{
+    background-color:rgb(241, 224, 199);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.box img{
+    height: 240px;
+    width: 220px;
+    padding: 20px;
+    align-self: center;
+   
+    /* align-self: center; */
+    
+}
+
+h4{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Concert One', cursive;
+}
+
+#register{
+  position:relative;
+}
+
+#register h3{
+    padding: 15px;
+}
+
+#register::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url(../img/6.jpeg) no-repeat center center/cover ;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.formgrp{
+    padding: 5px;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.formgrp input , textarea{
+    border: 0.8px solid black;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.formgrp label{
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+/* .formgrp .btn{
+    margin-left: 80%;
+} */
+
+.abc{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(248, 243, 225);
+    padding: 10px;
+    justify-content:space-around;
+    margin: 10px;
+    /* animation: rhythm 2s ease-in 0.1ms 2 none forward; */
+    
+}
+
+.about{
+    padding: 30px;
+    width: 200px;
+    align-items: center;
+}
+
+.about p{
+    font-family: 'Baloo Bhaina 2', cursive;
+
+}
+
+.about h4{
+    padding: 5px;
+  
+}
+
+.about p a{
+    text-decoration: none;
+    color: black;
+}
+
+.about p a:hover{
+    color: rgba(129, 4, 4, 0.781);
+}
+
+ .logo{
+     display: flex;
+     background-color:cornsilk;
+     justify-content: center;
+     height: 80px;
+     align-items: center;
+     padding: 10px;
+ }
+
+ .follow{
+     padding: 15px;
+     margin: 15px;
+ }
+
+ .follow img{
+     padding: 2px;
+     height: 30px;
+    cursor: pointer;
+ }
+
+.follow:hover{
+   border-radius: 120px;
+   border: 1px solid brown;
+}
+footer{
+    background-color:brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    font-weight: bolder;
+    color: white;
+}
